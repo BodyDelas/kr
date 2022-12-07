@@ -140,26 +140,26 @@ include "../db/db.php";
         <a href="kor.php">
           <div class="t1">
             <img
-              src=<?php echo $photo1?>
-              title=<?=$title_img1?>
+              src="https://shoko.ru/upload/iblock/b59/hyc0xw0uihyuvvyc7e02anl5h79khf84.jpg";
+              
             />
-            <span>Торт 'Шарик' 500р</span>
+            <span>Торт 'Шарик' 450р</span>
           </div>
       </div>
       </a>
         <a href="kor.php">
           <div class="t2">
             <img
-            src=<?php echo $photo3?>
-            title=<?=$title_img3?>
+            src="https://shoko.ru/upload/iblock/a77/e5e1c5l48bul7w8x1zl16gbugir0ub55.jpg";
+            
             />
             <span>Торт 'Клик' 500р</span>
           </div>
         </a>
         <a href="kor.php">
           <div class="t3">
-            <img src=<?php echo $photo2?>
-            title=<?=$title_img2?>
+            <img src="https://shoko.ru/upload/iblock/1f6/62vmyyehyhfp536nht7er5n3t6irt716.jpg";
+            
             />
             <span>Торт 'Стер' 500р</span>
           </div>
@@ -167,8 +167,7 @@ include "../db/db.php";
           <a href="kor.php">
           <div class="t4">
             <img
-            src=<?php echo $photo4?>
-            title=<?=$title_img4?>
+            src="https://shoko.ru/upload/iblock/461/nsv5c0fds18t1micz6g6czzlp0b1t0ka.jpg";
             />
             <span>Торт 'Верный' 500р</span>
          </div>
@@ -176,8 +175,7 @@ include "../db/db.php";
          <a href="kor.php">
           <div class="t5">
             <img
-            src=<?php echo $photo5?>
-            title=<?=$title_img5?>
+            src="https://shoko.ru/upload/iblock/ce4/mzyzu7153l2kjgor8pmse740z0d64r0z.jpg";
             />
             <span>Торт 'Ваш' 500р</span>
           </div>
@@ -185,15 +183,14 @@ include "../db/db.php";
           <a href="kor.php">
           <div class="t6">
             <img
-            src=<?php echo $photo6?> title=<?=$title_img6?>>
+            src="https://shoko.ru/upload/iblock/c7a/4tzloxeo168nkpsmnvs872k7ww6jht9s.jpg";
             <span>Торт 'Наш' 500р</span>
           </div>
           </a>
           <a href="kor.php">
           <div class="t7">
             <img
-            src=<?php echo $photo7?>
-            title=<?=$title_img7?>
+            src="https://shoko.ru/upload/iblock/abf/krdr3ndar1t9a013r6ud2448capv1nup.jpg";
             />
             <span>Торт 'Их' 500р</span>
          </div>
@@ -201,8 +198,7 @@ include "../db/db.php";
          <a href="kor.php">
           <div class="t8">
             <img
-            src=<?php echo $photo8?>
-            title=<?=$title_img8?>
+            src="https://shoko.ru/upload/iblock/fe9/thhz891a7ikl2c0elpi8dda1sep99mxi.jpg";
             />
             <span>Торт 'Мячик' 500р</span>
           </div>
@@ -210,8 +206,7 @@ include "../db/db.php";
           <a href="kor.php">
           <div class="t9">
             <img
-            src=<?php echo $photo9?>
-            title=<?=$title_img9?>
+            src="https://shoko.ru/upload/iblock/99e/vqpwdqslhclhtwd7tns64xph1qn5xmii.jpg";
             />
             <span>Торт 'Клава' 500р</span>
           </div>
@@ -219,8 +214,7 @@ include "../db/db.php";
           <a href="kor.php">
           <div class="t10">
             <img
-            src=<?php echo $photo10?>
-            title=<?=$title_img10?>
+            src="https://shoko.ru/upload/iblock/a0a/53khaqjou2fhs7y4atg6xpnncsaaxv55.jpg";
             />
             <span>Торт 'Тазик' 500р</span>
           </div>
@@ -228,8 +222,7 @@ include "../db/db.php";
           <a href="kor.php">
           <div class="t11">
             <img
-            src=<?php echo $photo11?>
-            title=<?=$title_img11?>
+            src="https://shoko.ru/upload/iblock/cb6/nan1rjg1psqt00vi4psho1f2cdwun8u4.jpg";
             />
             <span>Торт 'Индекс' 500р</span>
           </div>
@@ -237,8 +230,7 @@ include "../db/db.php";
           <a href="kor.php">
           <div class="t12">
             <img
-            src=<?php echo $photo12?>
-            title=<?=$title_img12?>
+            src="https://shoko.ru/upload/iblock/37e/hri8sb6sw8upz2qch9tr2hv6o8auj32i.jpg";
             />
             <span>Торт 'С' 500р</span>
           </div>
