@@ -23,13 +23,40 @@ $time = date("h:m:s"); //Текущее время
   </head>
   <body>
     
-  <?php include '../templates/header.php'?>
+  <header>
+      <div>
+        <span class="siteName">Candy shop</span>
+      </div>
+      <div class="about">
+        <a class="black_link" href="index.php#top1">На главную</a>
+        <a class="black_link" href="index.php#overriew">Товары</a>
+        <a class="black_link" href="index.php#contacs">Контакты</a>
+        <a href="<?php $link= 'log.php'; echo $link?>" 
+            class="<?php if($current_page===$link){
+                    echo 'menu_color';
+            }else echo 'black_link' ?>">Регистрация</a> 
+
+        <a href="<?php $link= 'kor.php'; echo $link?>" 
+            class="<?php if($current_page===$link){
+                    echo 'menu_color';
+            } else echo 'black_link'?>">Корзина</a>
+      </div>
+    </header>
 
     <div class="del">
       <span>Для заказа, обращайтесь по номеру: 8 (987) 415-16-63</span>
       <div>
     
-    <?php include '../templates/footer.php' ?>
+      <footer>
+      <div class="contacs">
+        <h3 id="contacs">Контактная информация магазина</h3>
+        <p>Наш телефон: 8(987)4151663</p>
+        <p>Наша почта: bogstrij83@mail.ru</p>
+        <span class="footer-info__item">
+              <?php echo 'Сформировано ',  $today, " в ", $time ?>
+</span>
+      </div>
+    </footer>
 
   </body>
 </html>

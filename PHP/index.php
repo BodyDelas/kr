@@ -57,43 +57,43 @@ $os = (int)$s % 2; // Четность секунды
 
 $current_page = "index.php";
 
-include "../db/db.php";
-  $result = mysqli_query($mysql, "SELECT * FROM `imgs`");
+// include "../db/db.php";
+//   $result = mysqli_query($mysql, "SELECT * FROM `imgs`");
   
   $arrayLink = [];
   
-  while ($name = mysqli_fetch_assoc($result)) {
-    array_push($arrayLink, [$name['link'], $name['titles']]);
-  }
+  // while ($name = mysqli_fetch_assoc($result)) {
+  //   array_push($arrayLink, [$name['link'], $name['titles']]);
+  // }
   
-  $title_img = '';
-      $photo1 = $arrayLink[0][0];
-      $title_img1 = $arrayLink[0][1];
-      $photo2 = $arrayLink[1][0];
-      $title_img2 = $arrayLink[1][1];
-      $photo2 = $arrayLink[2][0];
-      $title_img2 = $arrayLink[2][1];
-      $photo3 = $arrayLink[3][0];
-      $title_img3 = $arrayLink[3][1];
-      $photo4 = $arrayLink[4][0];
-      $title_img4 = $arrayLink[4][1];
-      $photo5 = $arrayLink[5][0];
-      $title_img5 = $arrayLink[5][1];
-      $photo6 = $arrayLink[6][0];
-      $title_img6 = $arrayLink[6][1];
-      $photo7 = $arrayLink[7][0];
-      $title_img7 = $arrayLink[7][1];
-      $photo8 = $arrayLink[8][0];
-      $title_img8 = $arrayLink[8][1];
-      $photo9 = $arrayLink[9][0];
-      $title_img9 = $arrayLink[9][1];
-      $photo10 = $arrayLink[10][0];
-      $title_img10 = $arrayLink[10][1];
-      $photo11 = $arrayLink[11][0];
-      $title_img11 = $arrayLink[11][1];
+  // $title_img = '';
+  //     $photo1 = $arrayLink[0][0];
+  //     $title_img1 = $arrayLink[0][1];
+  //     $photo2 = $arrayLink[1][0];
+  //     $title_img2 = $arrayLink[1][1];
+  //     $photo2 = $arrayLink[2][0];
+  //     $title_img2 = $arrayLink[2][1];
+  //     $photo3 = $arrayLink[3][0];
+  //     $title_img3 = $arrayLink[3][1];
+  //     $photo4 = $arrayLink[4][0];
+  //     $title_img4 = $arrayLink[4][1];
+  //     $photo5 = $arrayLink[5][0];
+  //     $title_img5 = $arrayLink[5][1];
+  //     $photo6 = $arrayLink[6][0];
+  //     $title_img6 = $arrayLink[6][1];
+  //     $photo7 = $arrayLink[7][0];
+  //     $title_img7 = $arrayLink[7][1];
+  //     $photo8 = $arrayLink[8][0];
+  //     $title_img8 = $arrayLink[8][1];
+  //     $photo9 = $arrayLink[9][0];
+  //     $title_img9 = $arrayLink[9][1];
+  //     $photo10 = $arrayLink[10][0];
+  //     $title_img10 = $arrayLink[10][1];
+  //     $photo11 = $arrayLink[11][0];
+  //     $title_img11 = $arrayLink[11][1];
 
 
-  $mysql->close();
+  // $mysql->close();
 ?>
 
 <!DOCTYPE html>
@@ -114,7 +114,25 @@ include "../db/db.php";
   </head>
   <body id="top1">
     
-  <?php include '../templates/header.php'?>
+  <header>
+      <div>
+        <span class="siteName">Candy shop</span>
+      </div>
+      <div class="about">
+        <a class="black_link" href="index.php#top1">На главную</a>
+        <a class="black_link" href="index.php#overriew">Товары</a>
+        <a class="black_link" href="index.php#contacs">Контакты</a>
+        <a href="<?php $link= 'log.php'; echo $link?>" 
+            class="<?php if($current_page===$link){
+                    echo 'menu_color';
+            }else echo 'black_link' ?>">Регистрация</a> 
+
+        <a href="<?php $link= 'kor.php'; echo $link?>" 
+            class="<?php if($current_page===$link){
+                    echo 'menu_color';
+            } else echo 'black_link'?>">Корзина</a>
+      </div>
+    </header>
 
     <div class="top" id="top">
       <h1>CANDY SHOP</h1>
@@ -153,7 +171,7 @@ include "../db/db.php";
             src="https://shoko.ru/upload/iblock/a77/e5e1c5l48bul7w8x1zl16gbugir0ub55.jpg";
             
             />
-            <span>Торт 'Клик' 500р</span>
+            <span>Торт 'Клик' 400р</span>
           </div>
         </a>
         <a href="kor.php">
@@ -161,7 +179,7 @@ include "../db/db.php";
             <img src="https://shoko.ru/upload/iblock/1f6/62vmyyehyhfp536nht7er5n3t6irt716.jpg";
             
             />
-            <span>Торт 'Стер' 500р</span>
+            <span>Торт 'Стер' 440р</span>
           </div>
           </a>
           <a href="kor.php">
@@ -169,7 +187,7 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/461/nsv5c0fds18t1micz6g6czzlp0b1t0ka.jpg";
             />
-            <span>Торт 'Верный' 500р</span>
+            <span>Торт 'Верный' 510р</span>
          </div>
          </a>
          <a href="kor.php">
@@ -177,14 +195,14 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/ce4/mzyzu7153l2kjgor8pmse740z0d64r0z.jpg";
             />
-            <span>Торт 'Ваш' 500р</span>
+            <span>Торт 'Ваш' 490р</span>
           </div>
           </a>
           <a href="kor.php">
           <div class="t6">
             <img
             src="https://shoko.ru/upload/iblock/c7a/4tzloxeo168nkpsmnvs872k7ww6jht9s.jpg";
-            <span>Торт 'Наш' 500р</span>
+            <span>Торт 'Наш' 480р</span>
           </div>
           </a>
           <a href="kor.php">
@@ -200,7 +218,7 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/fe9/thhz891a7ikl2c0elpi8dda1sep99mxi.jpg";
             />
-            <span>Торт 'Мячик' 500р</span>
+            <span>Торт 'Мячик' 410р</span>
           </div>
           </a>
           <a href="kor.php">
@@ -208,7 +226,7 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/99e/vqpwdqslhclhtwd7tns64xph1qn5xmii.jpg";
             />
-            <span>Торт 'Клава' 500р</span>
+            <span>Торт 'Клава' 390р</span>
           </div>
           </a>
           <a href="kor.php">
@@ -216,7 +234,7 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/a0a/53khaqjou2fhs7y4atg6xpnncsaaxv55.jpg";
             />
-            <span>Торт 'Тазик' 500р</span>
+            <span>Торт 'Тазик' 450р</span>
           </div>
           </a>
           <a href="kor.php">
@@ -224,7 +242,7 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/cb6/nan1rjg1psqt00vi4psho1f2cdwun8u4.jpg";
             />
-            <span>Торт 'Индекс' 500р</span>
+            <span>Торт 'Индекс' 456р</span>
           </div>
           </a>
           <a href="kor.php">
@@ -232,13 +250,22 @@ include "../db/db.php";
             <img
             src="https://shoko.ru/upload/iblock/37e/hri8sb6sw8upz2qch9tr2hv6o8auj32i.jpg";
             />
-            <span>Торт 'С' 500р</span>
+            <span>Торт 'С' 390р</span>
           </div>
           </a>
     </div>
 
 
-    <?php include '../templates/footer.php' ?>
+    <footer>
+      <div class="contacs">
+        <h3 id="contacs">Контактная информация магазина</h3>
+        <p>Наш телефон: 8(987)4151663</p>
+        <p>Наша почта: bogstrij83@mail.ru</p>
+        <span class="footer-info__item">
+              <?php echo 'Сформировано ',  $today, " в ", $time ?>
+</span>
+      </div>
+    </footer>
     
   </body>
 </html>
